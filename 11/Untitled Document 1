@@ -139,6 +139,12 @@ select name ,count(license_no)from participated natural join customer group by l
 
 
 -- -----Question3.6---------------
-delete from owns where reg_no in (selected reg_no from vehicle where Model="Alto") and license_no=(select license_no from customer where name='Abel');
+delete from owns where reg_no in(selected reg_no from vehicle where model='alto')and license_no=(select license_no from customer where name='abel');
+
+	
+	
+	
+
+
 
 
